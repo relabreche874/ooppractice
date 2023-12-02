@@ -1,5 +1,9 @@
 public class Employee {
     // a class for defining an employee
+
+    public static int numberOfEmployees;
+    // static members are used to represent a concept
+    // that should be in a single place
     private int baseSalary;
     // field for the employee's base salary
     private int hourlyRate;
@@ -15,6 +19,9 @@ public class Employee {
         // overloaded constructor
         setBaseSalary(baseSalary);
         setHourlyRate(hourlyRate);
+        numberOfEmployees++;
+        // increments the number of employees
+        // each time an employee object is created
     }
 
     public int calculateWage(int extraHours){
