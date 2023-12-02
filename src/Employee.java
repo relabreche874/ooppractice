@@ -2,7 +2,8 @@ public class Employee {
     // a class for defining an employee
 
     public static int numberOfEmployees;
-    // static members are used to represent a concept
+    // static members (fields/methods)
+    // are used to represent a concept
     // that should be in a single place
     private int baseSalary;
     // field for the employee's base salary
@@ -22,6 +23,10 @@ public class Employee {
         numberOfEmployees++;
         // increments the number of employees
         // each time an employee object is created
+    }
+
+    public static void printNumberOfEmployees(){
+        System.out.println(Employee.numberOfEmployees);
     }
 
     public int calculateWage(int extraHours){

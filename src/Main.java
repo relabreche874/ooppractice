@@ -18,6 +18,6 @@ public class Main {
 
 
         System.out.println(wage);
-        System.out.println(Employee.numberOfEmployees);
+        Employee.printNumberOfEmployees();
     }
 }
